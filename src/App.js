@@ -46,12 +46,12 @@ function App() {
   return (
     <div className="App">
       <div className="slider-container">
-        <label htmlFor="intervalDuration">Display time: </label>
+        <label htmlFor="intervalDuration">speed</label>
         <input
           type="range"
           id="intervalDuration"
-          min="1000"
-          max="10000"
+          min="500"
+          max="30000"
           step="500"
           value={intervalDuration}
           onChange={(e) => setIntervalDuration(e.target.value)}
@@ -64,7 +64,7 @@ function App() {
             &gt;
           </button>
           <button className="pause-button" onClick={togglePause}>
-            {isPaused ? "Resume" : "Pause"}
+            {isPaused ? "resume" : "pause"}
           </button>
         </div>
       </div>
