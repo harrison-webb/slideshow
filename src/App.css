@@ -4,7 +4,7 @@
   height: 100%;
 }
 
-.slider-container {
+.controls-container {
   position: fixed;
   bottom: 10px;
   left: 10px;
@@ -13,12 +13,11 @@
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5px;
   border-radius: 5px;
-  transition: opacity 0.5s;
-  opacity: 0.3;
 }
 
-.slider-container:hover {
-  opacity: 1;
+.slider-container {
+  display: flex;
+  align-items: center;
 }
 
 .slideshow-image {
@@ -32,14 +31,15 @@
   display: inline-flex;
 }
 
+.slider-container,
 .control-button,
 .pause-button {
-  /* Your existing styles */
   transition: opacity 0.5s;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
-.control-button:hover,
-.pause-button:hover {
+.controls-container:hover .slider-container,
+.controls-container:hover .control-button,
+.controls-container:hover .pause-button {
   opacity: 1;
 }

@@ -11,4 +11,5 @@ If you don't want to use start.sh then this is how I get it going "manually":
 - $node server.js
 - npm start
 
-Have fun!
+Here is a picture of the slideshow (todo: add gif here):
+![picture of my slideshow app: it just looks like a big picture in a browser window](./demo.png)

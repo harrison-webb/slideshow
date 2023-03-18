@@ -45,17 +45,19 @@ function App() {
 
   return (
     <div className="App">
-      <div className="slider-container">
-        <label htmlFor="intervalDuration">speed</label>
-        <input
-          type="range"
-          id="intervalDuration"
-          min="500"
-          max="30000"
-          step="500"
-          value={intervalDuration}
-          onChange={(e) => setIntervalDuration(e.target.value)}
-        />
+      <div className="controls-container">
+        <div className="slider-container">
+          <label htmlFor="intervalDuration">speed</label>
+          <input
+            type="range"
+            id="intervalDuration"
+            min="500"
+            max="30000"
+            step="500"
+            value={intervalDuration}
+            onChange={(e) => setIntervalDuration(e.target.value)}
+          />
+        </div>
         <div className="control-buttons">
           <button className="control-button" onClick={previousImage}>
             &lt;
